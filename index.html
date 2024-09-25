@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sliding tab navigation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="tab-box">
+            <h3 class="tab-box__title">Pure CSS Tabs</h3>
+            <ul class="nav">
+                <li class="nav__item nav__item--active" data-item="home" data-left="0">home</li>
+                <li class="nav__item" data-item="blog" data-left="106px">blog</li>
+                <li class="nav__item" data-item="code" data-left="211px">code</li>
+                <li class="nav__item" data-item="help" data-left="316px">help</li>
+                <li class="nav__item" data-item="about" data-left="421px">about</li>
+                <div class="active-box"></div>
+            </ul>
+            <div class="content content--active" id="home">
+                <h4 class="content__title">This is a Home content</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores debitis dignissimos, enim fugiat id ipsam iure magnam maiores optio provident quam quibusdam sequi suscipit tempore ut. Minus, tempora?</p>
+            </div>
+            <div class="content" id="blog">
+                <h4 class="content__title">This is a Blog content</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores debitis dignissimos, enim fugiat id ipsam iure magnam maiores optio provident quam quibusdam sequi suscipit tempore ut. Minus, tempora?</p>
+            </div>
+            <div class="content" id="code">
+                <h4 class="content__title">This is a Code content</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores debitis dignissimos, enim fugiat id ipsam iure magnam maiores optio provident quam quibusdam sequi suscipit tempore ut. Minus, tempora?</p>
+            </div>
+            <div class="content" id="help">
+                <h4 class="content__title">This is a Help content</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores debitis dignissimos, enim fugiat id ipsam iure magnam maiores optio provident quam quibusdam sequi suscipit tempore ut. Minus, tempora?</p>
+            </div>
+            <div class="content" id="about">
+                <h4 class="content__title">This is a About content</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores debitis dignissimos, enim fugiat id ipsam iure magnam maiores optio provident quam quibusdam sequi suscipit tempore ut. Minus, tempora?</p>
+            </div>
+        </div>
+        <div class="color-box">
+            <span class="color-item color-item-1"></span>
+            <span class="color-item color-item-2"></span>
+            <span class="color-item color-item-3"></span>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

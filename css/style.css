@@ -1,0 +1,123 @@
+:root{
+    --color-select : #17a2b8;
+    --background-hover : rgba(23,162,184,0.3)
+}
+body{
+    font-family: poppins-bold;
+    background-color: var(--color-select);
+}
+
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tab-box{
+    background-color: #fff;
+    width: 100%;
+    max-width: 70rem;
+    margin-inline: auto;
+    height: 39.1rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    padding: 3rem;
+}
+.tab-box__title{
+    font-family: poppins-bold;
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+.nav{
+    display: flex;
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.nav__item{
+    cursor: pointer;
+    width: 9.5rem;
+    height: 100%;
+    color: var(--color-select);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: poppins-medium;
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+.nav__item--active{
+    color: #fff;
+}
+.active-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-select);
+    width: 9.5rem;
+    height: 100%;
+    z-index: 1;
+    border-radius: .5rem;
+    transition: left .3s ease;
+}
+.nav__item:hover{
+    background-color: var(--background-hover);
+}
+.content{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .3s ease;
+}
+.content__title{
+    font-size: 2rem;
+    font-family: poppins-medium;
+    margin-bottom: 1.1rem;
+}
+.content p{
+    font-family: poppins-regular;
+    color: #333;
+    font-size: 1.6rem;
+}
+.content--active{
+    opacity: 1;
+    overflow: visible;
+    height: auto;
+}
+.color-box{
+    width: 100%;
+    max-width: 70rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.color-item{
+    display: block;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.color-item-1{
+    background-color: rgb(0, 128, 0);
+}
+.color-item-2{
+    background-color: rgb(255, 140, 0)
+}
+.color-item-3{
+    background-color: #17a2b8;
+}
